@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import css from "./App.module.css";
-import { fetchPhoto } from "../../HTTP/http";
+import { fetchPhoto } from "../../httpkey/httpkey";
 import SearchBar from "../SearchBar/SearchBar";
 import ImageGallery from "../ImageGallery/ImageGallery";
 import Loader from "../Loader/Loader";
