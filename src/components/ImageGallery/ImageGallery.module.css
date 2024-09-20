@@ -1,0 +1,10 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.cart {
+  display: block;
+  width: calc((100% - 32px) / 3);
+}
