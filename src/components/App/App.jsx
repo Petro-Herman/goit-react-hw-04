@@ -7,6 +7,8 @@ import Loader from "../Loader/Loader";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
 import LoadMoreBtn from "../LoadMoreBtn/LoadMoreBtn";
 import ImageModal from "../ImageModal/ImageModal";
+import MonthStatsTable from "../MonthStatsTable/MonthStatsTable";
+MonthStatsTable;
 
 export default function App() {
   const [loading, setLoading] = useState(false);
@@ -58,6 +60,7 @@ export default function App() {
 
   return (
     <div className={css.container}>
+      <MonthStatsTable />
       <SearchBar onSubmit={search} />
       <ImageGallery photos={photos} modalId={modalOn} />
       {loading && <Loader />}
